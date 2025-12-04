@@ -21,8 +21,6 @@ bool isForkliftable(const std::vector<std::vector<char>>& map, int row, int col)
     spots += hasPaperRoll(row + 1, col - 1);
     spots += hasPaperRoll(row - 0, col - 1);
 
-    std::cout << spots << std::endl;
-
     return spots < 4;
 }
 
